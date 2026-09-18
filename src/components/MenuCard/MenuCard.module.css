@@ -1,0 +1,5 @@
+.card { min-width: 0; border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); overflow: hidden; }
+.image { width: 100%; aspect-ratio: var(--ratio-menu-image); object-fit: cover; }
+.body { display: grid; gap: var(--space-2); padding: var(--space-4); text-align: center; }
+.body h3 { font-size: var(--font-size-card); }
+.body p { font-size: var(--font-size-small); color: var(--color-muted); }

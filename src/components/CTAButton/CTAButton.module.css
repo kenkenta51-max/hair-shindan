@@ -1,0 +1,7 @@
+.button { display: flex; align-items: center; justify-content: center; gap: var(--space-3); position: relative; width: 100%; min-height: var(--button-height); padding: var(--space-3) var(--space-5); border: var(--border-width) solid var(--color-cta); border-radius: var(--radius-pill); font-family: var(--font-heading); font-size: var(--font-size-card); transition: background-color var(--transition-fast) var(--ease-standard), box-shadow var(--transition-fast) var(--ease-standard); }
+.primary { background: linear-gradient(110deg, var(--color-cta), var(--color-cta-end)); color: var(--color-on-cta); }
+.secondary { background: transparent; color: var(--color-cta); }
+.button { padding-inline: var(--space-7); }
+.arrow { position: absolute; right: var(--space-5); width: 1.5rem; }
+.button:disabled { background: var(--color-sub); border-color: var(--color-border); color: var(--color-muted); cursor: not-allowed; }
+@media (hover: hover) { .button:hover:not(:disabled) { box-shadow: var(--shadow-card); } .secondary:hover:not(:disabled) { background: var(--color-selected); } }

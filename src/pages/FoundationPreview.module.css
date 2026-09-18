@@ -1,0 +1,8 @@
+.page { max-width: var(--content-max-width); margin-inline: auto; padding-inline: var(--page-gutter); padding-bottom: var(--space-7); }
+.main { display: grid; gap: var(--space-6); }
+.main h1 { font-size: var(--font-size-heading); margin-bottom: var(--space-3); }
+.main h2 { font-size: var(--font-size-card); }
+.eyebrow { font-family: var(--font-english); letter-spacing: var(--tracking-heading); color: var(--color-muted); }
+.choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--card-gap); }
+.section { display: grid; gap: var(--space-3); }
+.status { min-height: 1.8em; font-size: var(--font-size-small); }

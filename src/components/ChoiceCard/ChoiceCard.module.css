@@ -1,0 +1,10 @@
+.card { display: block; position: relative; min-width: 0; min-height: var(--touch-target-min); border: var(--border-selected) solid transparent; border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); transition: border-color var(--transition-fast) var(--ease-standard), background-color var(--transition-fast) var(--ease-standard); }
+.input { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+.card:has(.input:focus-visible) { outline: var(--focus-width) solid var(--color-focus); outline-offset: 4px; }
+.selected { border-color: var(--color-cta); background: var(--color-selected); }
+.image { width: 100%; aspect-ratio: var(--ratio-choice-image); object-fit: cover; border-radius: calc(var(--radius-card) - 2px) calc(var(--radius-card) - 2px) 0 0; }
+.body { display: grid; gap: var(--space-2); padding: var(--choice-padding, var(--space-5) var(--space-3)); text-align: center; }
+.title { font-family: var(--font-heading); font-size: var(--choice-title-size, var(--font-size-card)); }
+.description { font-family: var(--choice-description-font, var(--font-body)); font-size: var(--choice-description-size, var(--font-size-small)); color: var(--color-muted); white-space: pre-line; line-height: 1.65; }
+.check { position: absolute; top: var(--space-1); right: var(--space-1); display: grid; place-items: center; width: 1.25rem; height: 1.25rem; border-radius: var(--radius-pill); background: var(--color-cta); color: var(--color-on-cta); font-size: var(--font-size-caption); }
+.disabled { opacity: 0.6; cursor: not-allowed; }

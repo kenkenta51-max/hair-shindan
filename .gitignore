@@ -1,0 +1,11 @@
+node_modules/
+dist/
+work/
+*.local
+.env
+.env.*
+!.env.example
+
+# Local reference originals and temporary captures
+references/
+*.log

@@ -1,0 +1,4 @@
+.page { max-width: var(--content-max-width); margin-inline: auto; padding-inline: var(--page-gutter); }
+.main { display: grid; gap: var(--space-5); padding-block: var(--space-7); }
+.main h1 { font-size: var(--font-size-heading); }
+.label { font-family: var(--font-english); color: var(--color-muted); letter-spacing: var(--tracking-brand); }

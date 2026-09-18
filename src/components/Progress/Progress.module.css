@@ -1,0 +1,7 @@
+.root { display: flex; align-items: center; gap: var(--space-5); }
+.label { font-family: var(--font-heading); white-space: nowrap; }
+.track { position: relative; isolation: isolate; display: flex; justify-content: space-between; flex: 1; }
+.track::before { content: ''; position: absolute; z-index: -1; top: 50%; inset-inline: 0; height: var(--border-width); background: var(--color-border); }
+.dot { display: grid; place-items: center; width: var(--progress-dot-size, 1.125rem); height: var(--progress-dot-size, 1.125rem); border-radius: var(--radius-pill); background: var(--color-sub); color: var(--color-on-cta); font-size: var(--font-size-caption); }
+.active { background: var(--color-cta); }
+

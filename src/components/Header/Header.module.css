@@ -1,0 +1,5 @@
+.header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding-block: var(--header-padding-block, var(--space-6)); }
+.brand { display: flex; flex-direction: column; align-items: center; }
+.brand span { font-family: var(--font-english); font-size: var(--font-size-brand); letter-spacing: var(--tracking-brand); line-height: 1.2; }
+.brand small { font-size: var(--font-size-caption); letter-spacing: var(--tracking-brand); }
+.menu { display: grid; place-items: center; width: var(--touch-target-min); height: var(--touch-target-min); padding: 0; border: 0; background: transparent; color: var(--color-cta); }
